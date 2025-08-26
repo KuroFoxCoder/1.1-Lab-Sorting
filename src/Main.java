@@ -5,20 +5,33 @@ public class Main {
 
     public static void main(String[] args)
     {
-        int[] testArray = {1,8,4,5,2,3,7};
+        Random random = new Random();
+        int[] testArray = new int[random.nextInt(2,20)];
+        for(int i=0; i<testArray.length; i++)
+        {
+            testArray[i] = random.nextInt(1,50);
+        }
         sortArray(testArray, testArray.length);
 
     }
 
     public static void sortArray(int[] arr, int arrSize)
     {
+
         for(int i = 0; i < arrSize-1; i++)
         {
-            if(arr[i] < arr [i+1])//Executes if current value is lower than one ahead
+            for(int j = arrSize - 1; j > 0; j--) //Idea: Go in reverse through the array and bubble sort as if backwards were in ascending order.
             {
-                
+                //Idea from:https://beginnersbook.com/2014/07/java-program-for-bubble-sort-in-ascending-descending-order/
+                //The moment I saw the bubble sort going in the nested for loop, I realized what I was doing wrong. I tried to work backwards, but instead, I needed the bubble sort to work backwards instead of trying to do it the more complicated way.
+                if(arr[j] > arr[j-1]) //Use the bubble sort, if the current value is bigger than the value behind it.
+                {
+                    int temp = arr[j-1];
+                    arr[j-1] = arr [j];
+                    arr[j] = temp;
+                }
             }
         }
-        System.out.println("Sorted: " + Arrays.toString(arr));
+        System.out.println("Sorted: " + Arrays.toString(arr)); //Print the array to make sure it's sorted.
     }
 }
