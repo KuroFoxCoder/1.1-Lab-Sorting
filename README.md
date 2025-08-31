@@ -1,5 +1,5 @@
 ## Video
-(Video link will go here)
+[(Video link here)](https://drive.google.com/file/d/1upXuffT6DEdqSf-m4qHLHy9uDyKqg64w/view?usp=sharing)
 
 ## Why I chose Bubble Sorting
 Bubble Sorting seemed like the easiest to implement. The real puzzle of this task was actually how to get it to work in descending order.
