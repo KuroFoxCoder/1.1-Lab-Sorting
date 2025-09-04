@@ -1,3 +1,6 @@
+## Code[
+[Here is the code for this assignment.](https://github.com/KuroFoxCoder/1.1-Lab-Sorting/blob/main/Lab-Sort-Code.md)
+
 ## Video
 [(Video link here)](https://drive.google.com/file/d/1upXuffT6DEdqSf-m4qHLHy9uDyKqg64w/view?usp=sharing)
 
